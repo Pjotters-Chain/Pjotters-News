@@ -97,3 +97,69 @@ footer {
     background: #5cb85c;
     border-radius: 5px;
 }
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 10px;
+}
+
+.category-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #444;
+}
+
+.poll {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.trending-topics {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.recommended-articles {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.user-profile {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.news-feed {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.gamification {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.faq {
+    margin: 20px 0;
+    text-align: center;
+}
