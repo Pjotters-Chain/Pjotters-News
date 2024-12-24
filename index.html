@@ -9,8 +9,19 @@
 <body>
     <header>
         <div class="container">
+            <img src="Images/logo.png" alt="Pjotters-Logo" class="logo">
             <h1>Pjotters-News</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Artikel/artikel1.html">Pjotters-Chat</a></li>
+                    <li><a href="artikel2.html">Artikel 2</a></li>
+                    <li><a href="artikel3.html">Artikel 3</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
             <button onclick="switchToDesktop()">Schakel naar Desktopversie</button>
+            <button onclick="toggleDarkMode()">Schakel Donkere Modus in</button>
+            <button onclick="toggleTheme()">Schakel Thema</button>
         </div>
     </header>
     <main class="container">
@@ -44,6 +55,80 @@
             <p>Inleiding van het artikel 2. Dit is een korte samenvatting van het nieuwsartikel.</p>
             <a href="artikel2.html" class="read-more">Lees meer...</a>
         </section>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Zoek artikelen...">
+            <button onclick="searchArticles()">Zoeken</button>
+        </div>
+        <div class="newsletter">
+            <h3>Schrijf je in voor onze nieuwsbrief</h3>
+            <input type="email" placeholder="Voer je e-mailadres in">
+            <button onclick="subscribe()">Inschrijven</button>
+        </div>
+        <section class="popular-articles">
+            <h3>Populaire Artikelen</h3>
+            <ul>
+                <li><a href="Artikel/artikel1.html">Pjotters-Chat</a></li>
+                <li><a href="artikel2.html">Artikel 2</a></li>
+            </ul>
+        </section>
+        <section class="events">
+            <h3>Aankomende Evenementen</h3>
+            <ul>
+                <li>Evenement 1 - Datum</li>
+                <li>Evenement 2 - Datum</li>
+            </ul>
+        </section>
+        <section class="feedback">
+            <h3>Geef je feedback</h3>
+            <textarea placeholder="Jouw feedback..."></textarea>
+            <button onclick="submitFeedback()">Verstuur</button>
+        </section>
+        <section class="poll">
+            <h3>Wat is je favoriete type artikel?</h3>
+            <form id="poll-form">
+                <label><input type="radio" name="poll" value="Technologie"> Technologie</label><br>
+                <label><input type="radio" name="poll" value="Gezondheid"> Gezondheid</label><br>
+                <label><input type="radio" name="poll" value="Entertainment"> Entertainment</label><br>
+                <button type="button" onclick="submitPoll()">Stem</button>
+            </form>
+            <div id="poll-result"></div>
+        </section>
+        <section class="trending-topics">
+            <h3>Trending Topics</h3>
+            <ul>
+                <li><a href="#">Onderwerp 1</a></li>
+                <li><a href="#">Onderwerp 2</a></li>
+                <li><a href="#">Onderwerp 3</a></li>
+            </ul>
+        </section>
+        <section class="recommended-articles">
+            <h3>Aanbevolen Artikelen</h3>
+            <ul>
+                <li><a href="Artikel/artikel1.html">Aanbevolen Artikel 1</a></li>
+                <li><a href="artikel2.html">Aanbevolen Artikel 2</a></li>
+            </ul>
+        </section>
+        <section class="user-profile">
+            <h3>Jouw Profiel</h3>
+            <p>Naam: <span id="user-name">Gebruiker</span></p>
+            <button onclick="editProfile()">Bewerk Profiel</button>
+        </section>
+        <section class="news-feed">
+            <h3>Laatste Nieuws</h3>
+            <ul>
+                <li><a href="#">Nieuwsartikel 1</a></li>
+                <li><a href="#">Nieuwsartikel 2</a></li>
+            </ul>
+        </section>
+        <section class="gamification">
+            <h3>Verdien Punten!</h3>
+            <p>Deel artikelen en verdien punten!</p>
+        </section>
+        <section class="faq">
+            <h3>Veelgestelde Vragen</h3>
+            <p>Vraag 1: Wat is Pjotters-News?</p>
+            <p>Antwoord: Pjotters-News is een platform voor het delen van nieuwsartikelen.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Pjotters-News</p>
@@ -52,4 +137,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
